@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// Add this to your CSS or inline styles
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td {
+  font-weight: bold;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+  th, td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
